@@ -1,0 +1,205 @@
+.intro { 
+    
+    &::after{
+        position: absolute;
+        content: "";
+        background: url(../../img/png/weatherIntersect.png) no-repeat top right,
+                    url(../../img/png/weatherborder.png) no-repeat top right 286px;
+        width: 100%;
+        height: 313px;
+        top:611px;
+        z-index: -1;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        padding-top:  84px; //внутренни отступы интро области сверху на Family, слева ко всему тексту и справа к иконкам
+    }
+
+    &__greetings {  //Блок слева с тайтлом, текстом и кнопками              
+        position: relative;  //Волны 
+        &::after{   
+            content: "";
+            position: absolute;
+            background: url(../../img/png/waves.png) no-repeat top left;
+            width: 100%;
+            height: 100%;
+            top:-55px;
+            left: -91px;
+            z-index: -1;
+        }
+    }
+
+    &__undertitle { 
+        font-family: Euclid Circular B;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+
+        color: #3D3C3C;
+
+        margin-bottom: 47px;
+    }
+
+    &__title {  //Главный заголовок
+        font-family: SangBleu Kingdom;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 96px;
+        line-height: 96px;
+        color: #3D3C3C;
+
+        margin-bottom: 41px;
+    }
+
+    &__subtitle {
+        font-family: Euclid Circular B;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 32px;
+        color: #3D3C3C;
+        max-width: 410px;
+
+        margin-bottom: 57px;
+    }
+
+    &__buttons {  //Кнопки
+        margin-bottom: 24px;
+    }
+
+    &__btn-dark {
+        font-family: Euclid Circular B;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.08em;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        background: #BCA56A;
+        border-radius: 8px;
+        width: 200px;
+        height: 64px;
+        text-transform: uppercase;
+        margin-right: 40px;
+    }
+
+    &__btn-light {
+        font-family: Euclid Circular B;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.08em;
+        color: #3D3C3C;
+        text-transform: uppercase;
+        border-radius: 8px;
+        width: 200px;
+        height: 64px;
+        border: 1px solid #D9C287;
+    }
+
+    &__line {  //Вертикальная полоска
+        background-color: #D9C287;
+        width: 1px;
+        height: 48px;
+        margin: 0 0 24px 32px;
+    }
+
+    &__btn-down {
+        background: url(../../img/png/Down.png) no-repeat top left;
+        top:0;
+        left:0;
+        width: 64px;
+        height:64px;
+    }
+
+    &__side-wrap {      //Обертка спрвава, с иконками и погодой
+        padding-top: 121px;
+    }
+
+    &__icons {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 82px;
+        position: absolute;
+        right:76px;
+        top:272px;
+    }
+
+    &__icon {
+        
+    }
+
+    &__icon-link {
+        margin-bottom: 32px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        transition: 0.2s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    &__weather {
+        position: absolute;
+        right:200px;
+        top:706px;
+    }
+
+    &__celsius {
+        font-family: Euclid Circular B;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 56px;
+        color: #FFFFFF;
+
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            background: transparent url(../../img/png/Cloudly.png) no-repeat left center;
+            width: 100%;
+            height: 100%;
+            left:-83px;
+            top:0;
+        }
+    }
+
+    &__weather-text {
+        font-family: Euclid Circular B;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 32px;
+        color: #FFFFFF;
+
+        margin-bottom: 5px;
+    }
+
+    &__geo {
+        font-family: Euclid Circular B;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            background: transparent url(../../img/png/pin.png) no-repeat left center;
+            left:-26px;
+            bottom:0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

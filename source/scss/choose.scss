@@ -1,0 +1,99 @@
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.choose {
+
+    padding: 86px 0 32px 0;
+
+    &__wrap {
+    }
+
+    &__title {
+        font-family: SangBleu Kingdom;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 56px;
+        color: #3D3C3C;
+
+        margin-bottom: 50px;
+    }
+
+    &__form-wrap {
+        width: 100%;
+    }
+
+    &__form {           //Форма
+        display: flex;
+        justify-content: space-between;
+        background: #F6F6F6;
+        border-radius: 8px;
+        height: 80px;
+        padding: 8px;
+    }
+    
+    &__choosen__field {     //Общий стиль для полей
+        font-family: Euclid Circular B;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #333333;
+        background: #FFFFFF;
+    }
+    
+    &__rest-select {    //Стиль раскрывающегося поля
+        border: 1px solid #E3E3E3;
+        width: 328px;
+        height: 64px;
+        -webkit-appearance : none;
+        background:#FFFFFF url(../../img/png/arrow.png) no-repeat right 14px center;
+        padding: 12px 0 12px 16px; 
+        margin-right: 8px;
+    }
+
+    &__date-input {
+        display: none; //Скрытый инпут, по другому не смог избавиться от стандартной надписи и иконки, даже через js(
+    }
+    
+    &__date-label{// Вместо этого стилизовал его label 
+        border: 1px solid #E3E3E3;
+        width: 264px;
+        height: 64px;
+        background:#FFFFFF url(../../img/png/Vector.png) no-repeat right 14px center;
+        padding: 14px 0 10px 16px; 
+        margin-right: 8px;
+    }
+
+
+    &__number-input { //Текстовое поле количества людей
+        border: 1px solid #E3E3E3;
+        width: 392px;
+        height: 64px;
+        -webkit-appearance : none;
+        background:#FFFFFF url(../../img/png/Subtract.png) no-repeat right 14px center;
+        padding: 12px 0 12px 16px; 
+        margin-right: 8px;
+    }
+
+    &__submit-btn { //Кнопка НАЙТИ submit
+        font-family: Euclid Circular B;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 32px;
+        margin-left: auto;
+        color: #FFFFFF;
+        margin:-8px -8px 0 0 ;
+
+        width: 144px;
+        height: 80px;
+
+        background: #3D3C3C;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}
+

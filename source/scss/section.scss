@@ -1,0 +1,67 @@
+// Header-navigation   Общие стили с основной
+
+.header__wrap{
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+.header__logo{
+
+}
+
+.header__logo-pic{
+
+}
+
+.header__list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header__item{
+
+    margin-right: 64px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.header__link{
+    font-family: Euclid Circular B;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.header__link-enter{
+    font-family: Euclid Circular B;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-bottom: 1px dashed white;
+
+    position: relative;
+
+    &::before{
+        position: absolute;
+        bottom:0;
+        left:-28px;
+        content: "";
+        background: transparent url(../../img/png/key.png) no-repeat left center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+

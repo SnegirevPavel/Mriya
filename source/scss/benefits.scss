@@ -1,0 +1,242 @@
+
+.container-card {
+    max-width: 1392px;
+    margin: 0 auto;
+    padding: 77px 0 62px 0;
+    background: #F6F6F6 ;
+    border-radius: 24px;
+    z-index: 2;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        background: url(../../img/png/Vectorverticalwavestwo.png) no-repeat left ;
+        left:0;
+        top: 0;
+        width: 453px;
+        height: 856px;
+        z-index: -1;
+    }
+
+    &::after{
+        position: absolute;
+        content: "";
+        background: url(../../img/png/Vectorverticalwaves.png) no-repeat right ;
+        right:0;
+        top: 0;
+        width: 313px;
+        height: 856px;
+        z-index: -1;
+    }
+}
+
+.ben {
+
+    &__after{
+        position: relative;
+        &::before{
+            position: absolute;
+            content:"";
+            background: transparent url(../../img/png/Tablet.png) no-repeat bottom center;
+            width:100%;
+            height: 101%;
+            bottom: -746px;
+            z-index: -1;
+        }
+    }
+
+    &::before{
+        position: absolute;
+        content: "";
+        background: url(../../img/jpg/222bgRight.jpg) no-repeat left ;
+        right:0;
+        top: 1632px;
+        width: 524px;
+        height: 848px;
+        z-index: -1;
+    }
+
+    &::after{
+        position: absolute;
+        content: "";
+        background: url(../../img/jpg/111bgLeft.jpg) no-repeat right ;
+        left:0;
+        top: 1272px;
+        width: 365px;
+        height: 880px;
+        z-index: -1;
+    }
+
+    &__wrap {
+       
+    }
+
+    &__title-wrap {
+       display: flex;
+    }
+
+    &__title {
+        font-family: SangBleu Kingdom;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 56px;
+        color: #3D3C3C;
+
+        margin:0 32px 59px 0;
+    }
+
+    &__buttons {  //Кнопки смены слайдов
+        margin-top: 15px;
+    }
+
+    &__left-bnt{       //ЛЕВАЯ КНОПКА
+        background:  url(../../img/png/Leftbutton.png) left center;
+        width: 40px;
+        height: 40px;
+
+        margin-right: 16px;
+        transition: 0.2s;
+        &:active{
+            transform: scale(0.9);
+        }
+    }
+
+    &__right-bnt{       //ПРАВАЯ КНОПКА
+        background:  url(../../img/png/Rightbutton.png) left center;
+        width: 40px;
+        height: 40px;
+        transition: 0.2s;
+        &:active{
+            transform: scale(0.9);
+        }
+    }
+
+    &__main-card{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {   // Блок с карточками внутри
+        
+        -webkit-animation-name: fade;               //Анимация переключения слайдов
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+    }
+
+    &__card {
+        &:first-child{
+            margin-right: 40px;
+        }
+    }
+
+    &__card-img {
+        margin-bottom: 22px;
+    }
+
+    &__card-text {
+        font-family: Euclid Circular B;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #666666;
+
+        padding: 0 24px ;
+        margin-bottom: 10px;
+        max-width: 528px;
+    }
+
+    &__card-more {
+        font-family: Euclid Circular B;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 10px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #AB955E;
+        position: relative;
+
+        padding: 0 24px 16px ;
+
+        &::before{
+            position: absolute;
+            content:"";
+            background: #AB955E right bottom;
+            height: 2px;
+            width: 16px;
+            right:-8px;
+            bottom:21px;
+        }
+
+        &:hover{
+            color:#666666;
+        }
+    }
+
+    &__mid {  //Центральная колонка
+        margin-right: 32px;
+    }
+
+    &__mid-title {   //Заголовок в центре
+        font-family: Euclid Circular B;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+
+        color: #999999;
+
+        margin-bottom: 24px;
+    }
+
+    &__mid-text {  //Текст в центре
+        font-family: Euclid Circular B;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 32px;
+        color: #3D3C3C;
+
+        margin-bottom: 49px;
+    }
+
+    &__card-white{  //Модификатор последней карточки, белый фон
+        background: #FFFFFF;
+        box-shadow: 0px 8px 16px rgba(142, 124, 78, 0.16);
+        border-radius: 8px;
+        padding:8px 8px 16px 8px;
+        max-height: 504px;
+        transform: translateY(-112px);
+    }
+
+    &__card-img-white{
+        margin-bottom: 14px;
+    }
+}
+
+// =========================ВТОРАЯ СТРАНИЦА==============================
+
+

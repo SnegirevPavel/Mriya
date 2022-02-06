@@ -1,0 +1,165 @@
+.tabs {
+
+    width: 100%;
+    padding-bottom: 96px;
+
+    &__content {  //Обертка с карточками
+        display: flex;
+        overflow-x: scroll;
+        padding-bottom: 15px;
+        &::-webkit-scrollbar{
+            background-color: transparent;
+            width: 100%;
+            height: 8px;
+            cursor: pointer;
+        }
+        &::-webkit-scrollbar-thumb{
+            background: #BCA56A;
+            border-radius: 8px;
+        }
+    }
+
+    &__button{         //кнопка таба
+        font-family: Euclid Circular B;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.08em;  
+
+        color: #3D3C3C;   
+        text-transform: uppercase;
+        margin-right: 48px;
+        background: white;
+        &:hover {
+            color:  #BCA56A;
+        } 
+    }
+    &__button.active{
+        color:  #BCA56A;
+        position: relative;
+        &::before{
+            content:'';
+            position: absolute;
+            background: #BCA56A;
+            bottom:-18px;
+            left:0;
+            height: 3px;
+            width: 100%;
+        }
+    }
+
+   
+
+    &__buttons {
+        float: right;
+        width: 90px;
+        height: 40px;
+    }
+
+    &__btn-left {
+        background: url(../../img/png/Leftbtn.png) no-repeat left bottom; //Левая кнопка управления
+        width: 40px;
+        height: 40px;
+    }
+
+    &__btn-right {
+        background: url(../../img/png/Rightbtn.png) no-repeat right bottom;//Правая кнопка управления
+        width: 40px;
+        height: 40px;
+    }
+
+    &__card {  //ССылка - карточка
+        position: relative;
+        margin-right: 40px;
+
+        &::before{
+            position: absolute;
+            content: "";
+            background: url(../../img/png/Intersectcard.png) no-repeat left bottom;
+            left:0;
+            bottom:0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__text-wrap{  //Обертка текста спозиционированная внутрь карточки
+        position: absolute;
+        left:24px;
+        bottom:17px;
+    }
+
+    &__offer-sale {  //Скидка
+
+        font-family: Euclid Circular A;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.32);
+
+        margin-bottom: 8px;
+    }
+
+    &__offer-text {   //Текст карточки
+        font-family: Euclid Circular B;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.32);
+
+        max-width: 176px;
+    }
+
+    &__poster {
+    }
+
+    &__card-category {    //Карточка категорий отдыха
+        position: relative;
+        margin-right: 40px;
+        
+        &::before{
+            position: absolute;
+            content: "";
+            background: url(../../img/png/pad.png) no-repeat left bottom;
+            left:0;
+            bottom:0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__text-wrap-category { //Обертка текста карточек
+        font-family: Euclid Circular B;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.32);
+    }
+
+    &__offer-text-category {  //Текст карточек категорий отдыха
+        position: absolute;
+        left:24px;
+        bottom:17px;
+        margin-bottom: 0;
+    }
+}
+
+.tab {
+    overflow: hidden;
+    border-bottom: 1px solid rgba(61, 60, 60, 0.08);
+    padding:10px 0 6px 0;
+    margin-bottom: 32px;
+}
+
+/* Стиль содержимого вкладки */
+
+.tabcontent {
+    display: none;
+}
