@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!--jQuerry script-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="source/css/style.css">
+    <link rel="stylesheet" href="fonts/EuclidCircularA/EuclidCircularA.css">
+    <link rel="stylesheet" href="fonts/EuclidCircularB/EuclidCircularB.css">
+    <link rel="stylesheet" href="fonts/SangBleuKingdom/SangBleuKingdom.css">
+
+    <title>SAMPLE</title>
+</head>
+<body>
+
+    <div class="before"></div>
+
+    <header class="header">
+        <!-- Menu-sidebar -->
+                <div class="header__menu menu">
+                    <a class='menu__btn' data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <!-- это кнопка открытия сайдбара -->
+                    </a>
+                        <div class="offcanvas offcanvas-start menu__wrap" tabindex="-2" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                            <a class='menu__btn-close' data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                            <!-- кнопка закрытия сайдбара -->
+                            </a>
+            
+                            <!-- Header сайдбара -->
+
+
+                                <div class="menu__header-wrap header__wrap">
+                
+                                    <a href="index.html" class="menu__header-logo header__logo">
+                                        <img src="img/png/logogold.png" alt="logo-gold-pic" class="menu__header-logo-pic header__logo-pic"></img>
+                                    </a>
+                                    <ul class="menu__header-list header__list">
+                                        <li class="menu__header-item header__item">
+                                            <a href="#!" class="menu__header-link header__link">О комплексе</a>
+                                        </li>
+                                        <li class="menu__header-item header__item">
+                                            <a href="#!" class="menu__header-link header__link">Блог</a>
+                                        </li>
+                                        <li class="menu__header-item header__item">
+                                            <a href="#!" class="menu__header-link header__link">FAQ</a>
+                                        </li>
+                                        <li class="menu__header-item header__item">
+                                            <a href="#!" class="menu__header-link header__link">Контакты</a>
+                                        </li>
+                                    </ul>
+                                    
+                                    <div class="menu__header-enter">
+                                        <a href="#!" class="menu__header-link-enter header__link-enter">Вход</a>
+                                    </div>
+                                    
+                                </div>
+                
+                                <!-- Body сайдбара, основной контент -->
+                                <div class="menu__body body">
+                                    <div class="body__wrap">
+                                        <div class="body__info-wrap">
+                                            <div class="body__contacts-wrap">
+                                                <div class="body__line"></div>
+                                                <div class="body__icons">
+                                                    <a href="#!" class="body__icon-link">
+                                                        <img src="img/png/Facebook.png" alt="facebook-icon" class="body__icon">
+                                                    </a>
+                                                    <a href="#!" class="body__icon-link">
+                                                        <img src="img/png/Twitter.png" alt="twitter-icon" class="body__icon">
+                                                    </a>
+                                                    <a href="#!" class="body__icon-link">
+                                                        <img src="img/png/Instagram.png" alt="instagram-icon" class="body__icon">
+                                                    </a>
+                                                </div>
+                                            </div>
+                
+                                            <nav class="body__main">
+                
+                                                <div class="tab body__info-list-wrap">
+
+                                                    <button class="tablinks body__list-link" onmouseover="openCity(event, 'Place')">Размещение</button>
+                                                    <button class="tablinks body__list-link" onmouseover="openCity(event, 'Medicine')">Медицина</button>
+                                                    <button class="tablinks body__list-link" onmouseover="openCity(event, 'Event')">Мероприятие</button>
+                                                    <button class="tablinks body__list-link" onmouseover="openCity(event, 'Beauty')">Красота и восстановление</button>
+                                                    <button class="tablinks body__list-link" onmouseover="openCity(event, 'Bars')">Бары и рестораны</button>
+                                                    <button class="tablinks body__list-link" onmouseover="openCity(event, 'Entertainment')">Развлечения</button>
+                                                    <button class="tablinks body__list-link" onmouseover="openCity(event, 'Sport')">Спорт</button>
+                                                    <button class="tablinks body__list-link" onmouseover="openCity(event, 'Kids')">Детям</button>
+                                                    <button class="tablinks body__list-link" onmouseover="openCity(event, 'Transport')">Транспорт</button>
+                                                    
+                                                </div>
+                                                
+                                                <div id="Place" class="body__content tabcontent">
+                                                    <h3 class="body__content-title">Размещение</h3>
+                                                    <a href="#!" class="body__content-link">Размещение</a>
+                                                    <div class="body__tetx-wrap">
+                                                        <p class="body__content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis quo, laboriosam fuga, nesciunt cum officia aut hic unde cupiditate quod natus recusandae saepe! Fuga quo accusantium voluptas nesciunt at.</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="body__content tabcontent" id="Medicine">
+                                                    <h3 class="body__content-title">Клиника
+                                                        персонализированной
+                                                        медицины</h3>
+                                                    <a href="#!" class="body__content-link">Медицинский центр</a>
+                                                    <div class="body__tetx-wrap">
+                                                        <p class="body__content-text">Международные стандарты лечения и современные методики в сочетании с высококлассным сервисом и проживанием в одном из лучших семейных курортов мира Mriya Resort & SPA 5* </p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div id="Event" class="body__content tabcontent">
+                                                    <h3 class="body__content-title">Мероприятие</h3>
+                                                    <a href="#!" class="body__content-link">Мероприятие</a>
+                                                    <div class="body__tetx-wrap">
+                                                        <p class="body__content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis quo, laboriosam fuga, nesciunt cum officia aut hic unde cupiditate quod natus recusandae saepe! Fuga quo accusantium voluptas nesciunt at.</p>
+                                                    </div>
+                                                </div>
+                
+                                                <div id="Beauty" class="body__content tabcontent">
+                                                    <h3 class="body__content-title">Красота и восстановление</h3>
+                                                    <a href="#!" class="body__content-link">Красота и восстановление</a>
+                                                    <div class="body__tetx-wrap">
+                                                        <p class="body__content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis quo, laboriosam fuga, nesciunt cum officia aut hic unde cupiditate quod natus recusandae saepe! Fuga quo accusantium voluptas nesciunt at.</p>
+                                                    </div>
+                                                </div>
+                
+                                                <div id="Bars" class="body__content tabcontent">
+                                                    <h3 class="body__content-title">Бары и рестораны</h3>
+                                                    <a href="#!" class="body__content-link">Бары и рестораны</a>
+                                                    <div class="body__tetx-wrap">
+                                                        <p class="body__content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis quo, laboriosam fuga, nesciunt cum officia aut hic unde cupiditate quod natus recusandae saepe! Fuga quo accusantium voluptas nesciunt at.</p>
+                                                    </div>
+                                                </div>
+                
+                                                <div id="Entertainment" class="body__content tabcontent">
+                                                    <h3 class="body__content-title">Развлечения</h3>
+                                                    <a href="#!" class="body__content-link">Развлечения</a>
+                                                    <div class="body__tetx-wrap">
+                                                        <p class="body__content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis quo, laboriosam fuga, nesciunt cum officia aut hic unde cupiditate quod natus recusandae saepe! Fuga quo accusantium voluptas nesciunt at.</p>
+                                                    </div>
+                                                </div>
+                
+                                                <div id="Sport" class="body__content tabcontent">
+                                                    <h3 class="body__content-title">Спорт</h3>
+                                                    <a href="#!" class="body__content-link">Спорт</a>
+                                                    <div class="body__tetx-wrap">
+                                                        <p class="body__content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis quo, laboriosam fuga, nesciunt cum officia aut hic unde cupiditate quod natus recusandae saepe! Fuga quo accusantium voluptas nesciunt at.</p>
+                                                    </div>
+                                                </div>
+                
+                                                <div id="Kids" class="body__content tabcontent">
+                                                    <h3 class="body__content-title">Детям</h3>
+                                                    <a href="#!" class="body__content-link">Детям</a>
+                                                    <div class="body__tetx-wrap">
+                                                        <p class="body__content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis quo, laboriosam fuga, nesciunt cum officia aut hic unde cupiditate quod natus recusandae saepe! Fuga quo accusantium voluptas nesciunt at.</p>
+                                                    </div>
+                                                </div>
+                
+                                                <div id="Transport" class="body__content tabcontent">
+                                                    <h3 class="body__content-title">Транспорт</h3>
+                                                    <a href="#!" class="body__content-link">Транспорт</a>
+                                                    <div class="body__tetx-wrap">
+                                                        <p class="body__content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis quo, laboriosam fuga, nesciunt cum officia aut hic unde cupiditate quod natus recusandae saepe! Fuga quo accusantium voluptas nesciunt at.</p>
+                                                    </div>
+                                                </div>
+                                            </nav> 
+                
+                                            <!-- Слайдер -->
+                
+                                            <div class="slider">
+                                                <div class="item">
+                                                    <img src="img/jpg/photo.jpg" alt="first-slide">
+                                                    <div class="slideText">Антистресс</div>
+                                                    <p class="slideSubtitle">10-21 дня</p>
+                                                    <button type="button" class="slideButton">Подробнее</button>
+    
+                                                    <div class="slider-dots">
+                                                        <span class="slider-dots_item" onclick="Slide(1)"></span> 
+                                                        <span class="slider-dots_item" onclick="Slide(2)"></span> 
+                                                        <span class="slider-dots_item" onclick="Slide(3)"></span> 
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="item">
+                                                    <img src="img/jpg/phototwo.jpg" alt="first-slide">
+                                                    <div class="slideText">Заголовок2</div>
+                                                    <p class="slideSubtitle">Текст2</p>
+                                                    <button type="button" class="slideButton">Подробнее</button>
+    
+                                                    <div class="slider-dots">
+                                                        <span class="slider-dots_item" onclick="Slide(1)"></span> 
+                                                        <span class="slider-dots_item" onclick="Slide(2)"></span> 
+                                                        <span class="slider-dots_item" onclick="Slide(3)"></span> 
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="item">
+                                                    <img src="img/jpg/photo.jpg" alt="first-slide">
+                                                    <div class="slideText">Заголовок3</div>
+                                                    <p class="slideSubtitle">Текст3</p>
+                                                    <button type="button" class="slideButton">Подробнее</button>
+    
+                                                    <div class="slider-dots">
+                                                        <span class="slider-dots_item" onclick="Slide(1)"></span> 
+                                                        <span class="slider-dots_item" onclick="Slide(2)"></span> 
+                                                        <span class="slider-dots_item" onclick="Slide(3)"></span> 
+                                                    </div>
+                                                </div>
+                                            
+                                                
+                                            </div>
+                                            <!-- Конец слайдера -->
+                                            <div class="body__footer">
+                                                <div class="body__footer-info">
+                                                    <a href="mailto:info@mriyaresort.com" class="body__footer-link">info@mriyaresort.com</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                        </div>
+
+                </div>
+
+            <!-- Menu-sidebar-end -->
+    
+            <!-- HEADER -->
+    
+            <div  class="container-big">
+                <div class="header__wrap">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#!" class="header__link header__link--header">О комплексе</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link header__link--header">Блог</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link header__link--header">FAQ</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link header__link--header">Контакты</a>
+                        </li>
+                    </ul>
+        
+                    <a href="index.html" class="header__logo header__logo--center">
+                        <img src="img/png/logogold.png" alt="logo-gold-pic" class="header__logo-pic"></img>
+                    </a>
+        
+                    <div class="header__lang">
+                        <button class="header__lang-btn header__lang-btn--active" type="button">Ru</button>
+                        <button class="header__lang-btn" type="button">Eng</button>
+                    </div>
+                    
+                    <div class="header__enter">
+                        <a href="#!" class="header__link-enter">Вход</a>
+                        <a href="tel:+8 800 500 6847" class="header__tel">8 800 500 6847</a>
+                    </div>
+                </div>
+            </div>
+        
+    </header>
+
+    <main>
+        <!-- Info -->
+        <section class="intro">
+            <div class="container">
+                <div class="intro__wrap">
+                    <div class="intro__greetings">
+                        <p class="intro__undertitle">Family & Health Club</p>
+                        <h1 class="intro__title">Mriya<br>
+                            Resort</h1>
+                        <p class="intro__subtitle">Российский курорт для всей семьи
+                            на берегу черного моря</p>
+                        <div class="intro__buttons">
+                            <button type="button" class="intro__btn-dark">Найти номер</button>
+                            <button type="button" class="intro__btn-light">3D тур</button>
+                        </div>
+                        <div class="intro__line"></div>
+                        <button type="button" class="intro__btn-down"></button>
+                    </div>
+    
+                    <div class="intro__side-wrap">
+                        <div class="intro__icons">
+                            <a href="#!" class="intro__icon-link">
+                                <img src="img/png/Facebookwhite.png" alt="facebook-icon" class="intro__icon">
+                            </a>
+                            <a href="#!" class="intro__icon-link">
+                                <img src="img/png/Twitterwhite.png" alt="twitter-icon" class="intro__icon">
+                            </a>
+                            <a href="#!" class="intro__icon-link">
+                                <img src="img/png/Instagramwhite.png" alt="instagram-icon" class="intro__icon">
+                            </a>
+                        </div>
+                        <div class="intro__weather">
+                            <p class="intro__celsius">27°</p>
+                            <p class="intro__weather-text">Облачно</p>
+                            <p class="intro__geo">Ялта, Россия</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Choose -->
+
+        <section class="choose">
+            <div class="container">
+                <div class="choose__wrap">
+                    <h2 class="choose__title">Выберите свой отдых</h2>
+                    <div class="choose__form-wrap">
+                        <form action="post" class="choose__form">
+
+                            <!-- <input class="choose__rest-input" type="text" for="rest" name="rest-list"> -->
+                            <select class="choosen__field choose__rest-select" id="rest">
+                                <option selected>Семейный отдых</option>
+                                <option >Вдвоем</option>
+                                <option >Одному</option>
+                            </select>
+
+                            <label for="date" class="choose__date-label">пт, 8 мая — вс, 17 мая
+                                <input name="date" type="date" id="date" class="choose__date-input" >
+                            </label>
+
+                            <label for="number">
+                                <input type="text" id="number" class="choosen__field choose__number-input" value="2 взрослых  •  без детей  •  1 номер">
+                            </label>
+                            <button class="choose__submit-btn" type="submit">Найти</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabs -->
+        <section class="tabs">
+            <div class="container">
+                <!-- Ссылки вкладки -->
+                <div class="tab">
+                    <button class="tablinks tabs__button" onclick="openCity(event, 'Offer')" id="defaultOpen" >Спецпредложения</button>
+                    <button class="tablinks tabs__button" onclick="openCity(event, 'Poster')">Афиша</button>
+                    <button class="tablinks tabs__button" onclick="openCity(event, 'category')">Категории отдыха</button>
+
+                    <div class="tabs__buttons">
+                        <button class="tabs__btn-left"></button>
+                        <button class="tabs__btn-right"></button>
+                    </div>
+                </div>
+
+                <!-- Содержимое вкладки -->
+                <div id="Offer" class="tabcontent content-block">
+                    <div class="tabs__content"> <!-- Карточки спецпредложений -->
+                        <a href="#!" class="tabs__card">
+                            <img src="img/jpg/1.jpg" alt="cart-pic" class="tabs__img">
+                            <div class="tabs__text-wrap">
+                                <p class="tabs__offer-sale">-20%</p>
+                                <p class="tabs__offer-text">Для тех кто рядом</p>
+                            </div>
+                        </a>
+
+                        <a href="#!" class="tabs__card">
+                            <img src="img/jpg/2.jpg" alt="cart-pic" class="tabs__img">
+                            <div class="tabs__text-wrap">
+                                <p class="tabs__offer-sale">-10%</p>
+                                <p class="tabs__offer-text">Раннее бронирование</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="Poster" class="tabcontent"> <!-- Карточки афиши -->
+                    <div class="tabs__content">
+                    <a href="#!" class="tabs__card">
+                        <img src="img/jpg/2.jpg" alt="cart-pic" class="tabs__img">
+                        <div class="tabs__text-wrap">
+                            <div class="tabs__text-wrap">
+                                <p class="tabs__offer-sale">АФИША</p>
+                                <p class="tabs__offer-text">Текст афиши</p>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+
+                <div id="category" class="tabcontent">  <!-- Карточки категорий отдыха -->
+                    <div class="tabs__content">
+                        <a href="#!" class="tabs__card-category">
+                            <img src="img/jpg/13.jpg" alt="cart-pic" class="tabs__img">
+                            <div class="tabs__text-wrap-category ">
+                                <p class="tabs__offer-text-category">Семейный отдых</p>
+                            </div>
+                        </a>
+
+                        <a href="#!" class="tabs__card-category">
+                            <img src="img/jpg/24.jpg" alt="cart-pic" class="tabs__img">
+                            <div class="tabs__text-wrap-category">
+                                <p class="tabs__offer-text-category">Для тех кто рядом</p>
+                            </div>
+                        </a>
+
+                        <a href="#!" class="tabs__card-category">
+                            <img src="img/jpg/35.jpg" alt="cart-pic" class="tabs__img">
+                            <div class="tabs__text-wrap-category">
+                                <p class="tabs__offer-text-category">Для тех кто рядом</p>
+                            </div>
+                        </a>
+
+                        <a href="#!" class="tabs__card-category">
+                            <img src="img/jpg/46.jpg" alt="cart-pic" class="tabs__img">
+                            <div class="tabs__text-wrap-category">
+                                <p class="tabs__offer-text-category">Для тех кто рядом</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info -->
+        <section class="info">
+            <div class="info__wrap">
+                <h2 class="info__title">Mriya Resort & SPA — <br><b>больше чем просто отдых</b></br></h2>
+                <p class="info__text">В окружении необычного природного ландшафта курорт становится по-настоящему уникальным. Это место идеально для тех, кто больше гор любит только море.</p>
+                <button type="button" class="info__button">О комплексе</button>
+            </div>
+        </section>
+
+
+        <!-- Benefits(BEN) -->
+        <section class="ben">
+            <div class="container-card">
+                <div class="container">
+                   <div class="ben__after">  
+                        <ben class="ben__wrap">
+    
+                            <div class="ben__title-wrap">     <!-- Тайтл и кнопки переключения -->  
+                                <h2 class="ben__title">Все включено</h2>
+                                <div class="ben__buttons">
+                                    <button class="ben__left-bnt" onclick="minusSlide()"></button>
+                                    <button class="ben__right-bnt" onclick="plusSlide()"></button>
+                                </div>
+                            </div>
+    
+                            <div class="ben__content">   <!--Основной контент, обертка с display block -->
+                                <div class="ben__main-card" > <!--Обертка карточки, не учавствующаяя в коде js, с display:flex -->
+                                    <div class="ben__card"> <!--Левая карточка -->
+                                        <img src="img/jpg/card1.jpg" alt="cardOne" class="ben__card-img">
+                                        <p class="ben__card-text">Заниматесь в тренажерном зале и посещайте групповые тренировки</p>
+                                        <a href="#!" class="ben__card-more">Читать больше</a>
+                                    </div>
+                                    <div class="ben__mid"> <!--Средняя колонка -->
+                                        <h4 class="ben__mid-title">Оздоровление</h4>
+                                        <p class="ben__mid-text">Mriya Resort — это маленький город со множеством возможностей, каждый найдет себе занятие по вкусу</p>
+                                        <div class="ben__card"><!--Средняя ккарточка -->
+                                            <img src="img/jpg/card2.jpg" alt="cardTwo" class="ben__card-img">
+                                            <p class="ben__card-text">Питаться в ресторане шведской линии согласно выбранному варианту</p>
+                                            <a href="#!" class="ben__card-more">Читать больше</a>
+                                        </div>
+                                    </div>
+                                    <div class="ben__card ben__card-white"> <!--Правая карточка -->
+                                        <img src="img/jpg/card3.jpg" alt="cardThree" class="ben__card-img-white">
+                                        <p class="ben__card-text">Исследовать все общедоступные зоны и территории комплекса</p>
+                                        <a href="#!" class="ben__card-more">Читать больше</a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="ben__content">  <!--Основной контент, обертка с  возможностью display block -->
+                                <div class="ben__main-card" >  <!--Обертка карточки, не учавствующаяя в коде js, с display:flex -->
+                                    <div class="ben__card"> <!--Левая карточка -->
+                                        <img src="img/jpg/card1.jpg" alt="cardOne" class="ben__card-img">
+                                        <p class="ben__card-text">Заниматесь в тренажерном зале и посещайте групповые тренировки</p>
+                                        <a href="#!" class="ben__card-more">Читать больше</a>
+                                    </div>
+                                    <div class="ben__mid"> <!--Средняя колонка -->
+                                        <h4 class="ben__mid-title">Карточка 2</h4>
+                                        <p class="ben__mid-text">Mriya Resort — это маленький город со множеством возможностей, каждый найдет себе занятие по вкусу</p>
+                                        <div class="ben__card"><!--Средняя ккарточка -->
+                                            <img src="img/jpg/card2.jpg" alt="cardTwo" class="ben__card-img">
+                                            <p class="ben__card-text">Питаться в ресторане шведской линии согласно выбранному варианту</p>
+                                            <a href="#!" class="ben__card-more">Читать больше</a>
+                                        </div>
+                                    </div>
+                                    <div class="ben__card ben__card-white"> <!--Правая карточка -->
+                                        <img src="img/jpg/card3.jpg" alt="cardThree" class="ben__card-img-white">
+                                        <p class="ben__card-text">Исследовать все общедоступные зоны и территории комплекса</p>
+                                        <a href="#!" class="ben__card-more">Читать больше</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </ben>
+                   </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer">
+                    <div class="footer__pic-wrap"></div>
+                    <a href="index.html" class="footer__logo">
+                        <img src="img/png/logogold.png" alt="footer__logo" class="footer__logo-pic">
+                    </a>
+                </div>
+            </footer>
+
+        </section>
+    </main>
+
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="source/js/script.js"></script>
+</body>
+</html>
