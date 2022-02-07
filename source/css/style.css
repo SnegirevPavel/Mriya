@@ -1880,7 +1880,8 @@ body::before {
     width: 100%;
   }
 }
-.body__content-title {
+.body__content-link {
+  display: block;
   font-family: Euclid Circular B;
   font-style: normal;
   font-weight: 300;
@@ -1889,26 +1890,6 @@ body::before {
   color: #FFFFFF;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.32);
   margin-bottom: 32px;
-}
-@media (max-width: 1395px) {
-  .body__content-title {
-    font-size: 20px;
-  }
-}
-@media (max-width: 991px) {
-  .body__content-title {
-    font-size: 16px;
-    line-height: 20px;
-  }
-}
-.body__content-link {
-  font-family: Euclid Circular B;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 32px;
-  color: #FFFFFF;
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.32);
 }
 .body__content-link:hover {
   color: #D9C287;
@@ -1923,6 +1904,9 @@ body::before {
     font-size: 16px;
     line-height: 20px;
   }
+}
+.body__content-link:last-child {
+  margin-bottom: 0;
 }
 .body__tetx-wrap {
   position: absolute;
@@ -2207,30 +2191,25 @@ body::before {
   display: none;
   padding: 22px 0 22px 32px;
 }
-.mobile__title {
-  font-family: Euclid Circular B;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  color: #FFFFFF;
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.32);
-  margin-bottom: 12px;
-}
 .mobile__link {
+  display: block;
   font-family: Euclid Circular B;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 32px;
-  color: #D9C287;
+  color: #ffffff;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.32);
+  margin-bottom: 12px;
 }
 .mobile__link:focus {
   color: #D9C287;
 }
 .mobile__link:hover {
   color: #D9C287;
+}
+.mobile__link:last-child {
+  margin-bottom: 0;
 }
 .mobile__btn {
   margin: 39px 0 44px 0;
