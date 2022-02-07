@@ -1,6 +1,7 @@
 
 .container-card {
     max-width: 1392px;
+    height: auto;
     margin: 0 auto;
     padding: 77px 0 62px 0;
     background: #F6F6F6 ;
@@ -16,6 +17,12 @@
         width: 453px;
         height: 856px;
         z-index: -1;
+        @media (max-width: 767px){
+            background: none;
+        }
+    }
+    @media (max-width: 575px){
+        padding: 40px 0 24px 0;
     }
 
     &::after{
@@ -27,10 +34,24 @@
         width: 313px;
         height: 856px;
         z-index: -1;
+        @media (max-width: 767px){
+            background: none;
+        }
     }
 }
 
 .ben {
+
+    &__card-img-mobile{
+        display: none;
+        @media (max-width: 575px){
+            display: block;
+            width: 100%;
+            height: auto;
+            margin-bottom: 22px;
+            border-radius: 10px;
+        }
+    }
 
     &__after{
         position: relative;
@@ -42,6 +63,9 @@
             height: 101%;
             bottom: -746px;
             z-index: -1;
+            @media (max-width: 575px){
+                display:none;
+            }
         }
     }
 
@@ -54,26 +78,21 @@
         width: 524px;
         height: 848px;
         z-index: -1;
-    }
-
-    &::after{
-        position: absolute;
-        content: "";
-        background: url(../../img/jpg/111bgLeft.jpg) no-repeat right ;
-        left:0;
-        top: 1272px;
-        width: 365px;
-        height: 880px;
-        z-index: -1;
-    }
-
-    &__wrap {
-       
+        @media (max-width: 767px){
+            background: url(../../img/jpg/222333.jpg) no-repeat right ;
+            width: 213px;
+            height: 345px;
+            right:0;
+            top: 2148px;
+        }
     }
 
     &__title-wrap {
-       display: flex;
-    }
+        display: flex;
+        @media (max-width: 767px){
+            justify-content: space-between;
+        }
+     }  
 
     &__title {
         font-family: SangBleu Kingdom;
@@ -84,10 +103,19 @@
         color: #3D3C3C;
 
         margin:0 32px 59px 0;
+        @media (max-width: 767px){
+            font-size: 24px;
+        }
+        @media (max-width: 575px){
+            margin: 0 0 32px 0;
+        }
     }
 
     &__buttons {  //Кнопки смены слайдов
         margin-top: 15px;
+        @media (max-width: 575px){
+            margin-top:10px;
+        }
     }
 
     &__left-bnt{       //ЛЕВАЯ КНОПКА
@@ -112,12 +140,21 @@
         }
     }
 
-    &__main-card{
+    &__main-card{   // Стили здесь
         display: flex;
         justify-content: space-between;
+        @media (max-width: 767px){
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        @media (max-width: 575px){
+            text-align: start;
+        }
     }
 
-    &__content {   // Блок с карточками внутри
+    &__content {   // Блок с карточками внутри, ЭТО ДЛЯ JS , должен быть display block
         
         -webkit-animation-name: fade;               //Анимация переключения слайдов
         -webkit-animation-duration: 1.5s;
@@ -146,11 +183,21 @@
     &__card {
         &:first-child{
             margin-right: 40px;
-        }
+            @media (max-width: 767px){
+                margin: 0 0 40px 0;
+            }
+        }     
     }
 
     &__card-img {
         margin-bottom: 22px;
+        @media (max-width: 1199px){
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 575px){
+            display: none;
+        }
     }
 
     &__card-text {
@@ -164,6 +211,9 @@
         padding: 0 24px ;
         margin-bottom: 10px;
         max-width: 528px;
+        @media (max-width: 1199px){
+            padding: 0;
+        }
     }
 
     &__card-more {
@@ -177,7 +227,11 @@
         color: #AB955E;
         position: relative;
 
-        padding: 0 24px 16px ;
+        padding: 0 0 16px 24px ;
+        @media (max-width: 575px){
+            padding: 0;
+            margin-bottom: 24px;
+        }
 
         &::before{
             position: absolute;
@@ -185,8 +239,11 @@
             background: #AB955E right bottom;
             height: 2px;
             width: 16px;
-            right:-8px;
+            right:-24px;
             bottom:21px;
+            @media (max-width: 575px){
+                bottom:5px;
+            }
         }
 
         &:hover{
@@ -196,6 +253,9 @@
 
     &__mid {  //Центральная колонка
         margin-right: 32px;
+        @media (max-width: 767px){
+            margin: 0 0 40px 0;
+        }
     }
 
     &__mid-title {   //Заголовок в центре
@@ -206,10 +266,12 @@
         line-height: 24px;
         letter-spacing: 0.08em;
         text-transform: uppercase;
-
         color: #999999;
 
         margin-bottom: 24px;
+        @media (max-width: 575px){
+            display: none;
+        }
     }
 
     &__mid-text {  //Текст в центре
@@ -221,6 +283,17 @@
         color: #3D3C3C;
 
         margin-bottom: 49px;
+        @media (max-width: 1199px){
+            max-width: 200px;
+        }
+        @media (max-width: 767px){
+            max-width: 80%;
+            text-align: center;
+            margin: 0 auto 40px auto;
+        }
+        @media (max-width: 575px){
+            display: none;
+        }
     }
 
     &__card-white{  //Модификатор последней карточки, белый фон
@@ -230,13 +303,39 @@
         padding:8px 8px 16px 8px;
         max-height: 504px;
         transform: translateY(-112px);
+        @media (max-width: 1199px){
+            padding-right: 0;
+        }
+        @media (max-width: 991px) {
+            padding-right: 8px;
+            height: 410px;
+        }
+
+        @media (max-width: 767px){
+            background-color: transparent;
+            width: 100%;
+            box-shadow: none;
+            max-height: none;
+            transform: translateY(0);
+            margin-bottom: 40px;
+            padding: 0;
+        }
+        @media (max-width: 575px){
+            margin-bottom: 0;
+        }
     }
 
     &__card-img-white{
         margin-bottom: 14px;
+        @media (max-width: 1199px){
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 575px){
+            display: none;
+        }
     }
 }
 
-// =========================ВТОРАЯ СТРАНИЦА==============================
 
 

@@ -97,3 +97,47 @@ function showSlides(n) {
 
 
 
+//Mobile-burger-menu=======
+
+document.querySelector('.mobile div').addEventListener('click', () => {
+    document.querySelector('.mobile div').classList.toggle('active');
+    document.querySelector('.mobile nav').classList.toggle('open');
+    document.querySelector('.mobile__list-wrap').classList.toggle('show');
+});
+
+// ==========================
+
+document.querySelector('.mobile__burger-exit').addEventListener('click', () => {            //То же самое для закрывающей кнопи
+    document.querySelector('.mobile__burger-exit').classList.toggle('active');
+    document.querySelector('.mobile nav').classList.toggle('open');
+    document.querySelector('.mobile__list-wrap').classList.toggle('show');
+});
+
+
+// =======================
+
+let burger = document.querySelector('.burger');
+console.log(burger);
+burger.onclick = function(){     
+    this.classList.toggle('buttonRight')  ;
+        
+}
+
+let item = document.querySelectorAll(".mobile__item");          //Функция добавляет класс с фоном для вкладки
+for (let i = 0; i < item.length; i++) {
+  item[i].onclick = function(){
+    this.classList.toggle('bg');
+  };
+}
+
+
+
+
+//Вкладки в меню бургер
+
+$(document).ready(function(){
+    $('.mobile__item').click(function(event){
+        $(this).toggleClass('run').next().slideToggle(300);
+    });
+});
+

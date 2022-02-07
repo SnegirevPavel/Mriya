@@ -1,0 +1,29 @@
+
+
+@font-face {
+    font-family: 'SangBleuKingdom';
+    src: url('SangBleuKingdom-Bold-WebXL.otf');
+    font-weight:bold ;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SangBleuKingdom';
+    src: url('SangBleuKingdom-BoldItalic-WebXL.otf');
+    font-weight:bold ;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SangBleuKingdom';
+    src: url('SangBleuKingdom-Regular-WebXL.otf');
+    font-weight:normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SangBleuKingdom';
+    src: url('SangBleuKingdom-BoldItalic-WebXL.otf');
+    font-weight:normal ;
+    font-style: italic;
+}

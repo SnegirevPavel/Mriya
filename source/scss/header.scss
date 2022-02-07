@@ -2,12 +2,18 @@
 
     display: flex;
     border-bottom: 1px solid rgba(61, 60, 60, 0.08);
-
-    //некоторые стили для этих классов уже прописаны в section.scss
-    &__wrap {
+    @media (max-width: 575px){
+        background:#ffffff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+        position: fixed;
+        z-index: 99;
+        width: 100%;
+        top:0;
     }
 
-    &__logo--center{
+    //некоторые стили для этих классов уже прописаны в section.scss
+
+    &__logo--center{   //ЛОГО СВЕРХУ
         margin: 0 auto ;
 
         position: relative;
@@ -22,10 +28,13 @@
             @media (max-width: 991px){
                 background:transparent url(../../img/png/stars.png) no-repeat bottom center;
             }
+            @media (max-width: 575px){
+            display: none;
+            }
         }
-    }
+        @media (max-width: 575px){
 
-    &__logo-pic {
+        }
     }
 
     &__list {
@@ -37,6 +46,9 @@
             margin: 0 10px 0 10px;
             display: flex;
             flex-wrap: wrap;
+        }
+        @media (max-width: 575px){
+            display: none;
         }
     }
 
@@ -66,11 +78,13 @@
             justify-content: flex-end;
             text-align: center;
         }
-        
-        
+        @media (max-width: 575px){
+            width: 80px;
+            height: 80px;
+        }
     }
 
-    &__link-enter {
+    &__link-enter {     //Кнопка ВХОД
         color: #FFFFFF;
         &:hover{
             color: #D9C287;
@@ -88,6 +102,9 @@
             flex-direction: column;
             justify-content: flex-end;
             margin: 0 10px 0 30px;
+        }
+        @media (max-width: 575px){
+            display: none;
         }
     }
 
@@ -136,6 +153,9 @@
         }
         @media (max-width: 991px){
             margin: 0 10px;
+        }
+        @media (max-width: 575px){
+            display: none;
         }
     }
 }

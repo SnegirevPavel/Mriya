@@ -4,6 +4,24 @@
     padding-bottom: 103px;
 
     position: relative;
+
+    @media (max-width: 575px){
+        max-height: 416px;
+    }
+
+    @media (max-width: 575px){
+        &::after{
+            position: absolute;
+            content: "";
+            background: url(../../img/jpg/111bgLeft.jpg) no-repeat right ;
+            left:0;
+            bottom:0;
+            width: 365px;
+            height: 350px;
+            z-index: -1;
+        }
+    }
+    
     &::before{
         position: absolute;
         content: "";
@@ -12,6 +30,9 @@
         height: 253px;
         left:0;
         bottom:405px;
+        @media (max-width: 575px){
+            display: none;
+        }
     }
 
     &__pic-wrap {
@@ -23,6 +44,10 @@
         position: relative;
         z-index: 2;
         margin-top:649px ;
+        @media (max-width: 575px){
+            margin-top: 144px;
+            margin-bottom: 100px;
+        }
     }
 
     &__logo-pic {

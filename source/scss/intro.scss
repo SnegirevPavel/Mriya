@@ -9,12 +9,22 @@
         height: 313px;
         top:611px;
         z-index: -1;
+        @media (max-width: 575px){
+            display: none;
+        }
+    }
+    @media (max-width: 991px){
+        margin-bottom: 70px;
+    }
+    @media (max-width: 575px){
+        margin-top: 80px;
+        margin-bottom: 0;
     }
 
     &__wrap {
         display: flex;
         justify-content: space-between;
-        padding-top:  84px; //внутренни отступы интро области сверху на Family, слева ко всему тексту и справа к иконкам
+        padding-top:  84px; //внутренний отступ интро области сверху на Family
     }
 
     &__greetings {  //Блок слева с тайтлом, текстом и кнопками              
@@ -43,6 +53,9 @@
         color: #3D3C3C;
 
         margin-bottom: 47px;
+        @media (max-width: 575px){
+            margin-bottom: 30px;
+        }
     }
 
     &__title {  //Главный заголовок
@@ -54,6 +67,16 @@
         color: #3D3C3C;
 
         margin-bottom: 41px;
+        @media (max-width: 991px){
+            color: #FFFFFF;
+            text-shadow: 2px 2px 10px black;
+        }
+        @media (max-width: 575px){
+            font-size: 64px;
+            color: #3D3C3C;
+            text-shadow: none;
+            margin-bottom: 28px;
+        }
     }
 
     &__subtitle {
@@ -66,10 +89,27 @@
         max-width: 410px;
 
         margin-bottom: 57px;
+        @media (max-width: 991px){
+            color: #FFFFFF;
+            text-shadow: 2px 2px 10px black;
+            max-width: 300px;
+            margin-bottom: 30px;
+        }
+        
+        @media (max-width: 575px){
+            font-size: 20px;
+            text-shadow: none;
+            color: #3D3C3C;
+            margin-bottom: 39px;
+        }
     }
 
     &__buttons {  //Кнопки
         margin-bottom: 24px;
+        @media (max-width: 575px){
+            display: flex;
+            margin-bottom: 48px;
+        }
     }
 
     &__btn-dark {
@@ -87,6 +127,10 @@
         height: 64px;
         text-transform: uppercase;
         margin-right: 40px;
+        @media (max-width: 575px){
+            width: 154px;
+            margin-right: 16px;
+        }
     }
 
     &__btn-light {
@@ -102,6 +146,9 @@
         width: 200px;
         height: 64px;
         border: 1px solid #D9C287;
+        @media (max-width: 575px){
+            width: 154px;
+        }
     }
 
     &__line {  //Вертикальная полоска
@@ -109,6 +156,9 @@
         width: 1px;
         height: 48px;
         margin: 0 0 24px 32px;
+        @media (max-width: 575px){
+            display: none;
+        }
     }
 
     &__btn-down {
@@ -117,10 +167,17 @@
         left:0;
         width: 64px;
         height:64px;
+        @media (max-width: 575px){
+            display: block;
+            margin: 0 auto;
+        }
     }
 
     &__side-wrap {      //Обертка спрвава, с иконками и погодой
         padding-top: 121px;
+        @media (max-width: 575px){
+            display: none;
+        }
     }
 
     &__icons {
@@ -130,10 +187,6 @@
         position: absolute;
         right:76px;
         top:272px;
-    }
-
-    &__icon {
-        
     }
 
     &__icon-link {
