@@ -124,9 +124,15 @@
         height: 40px;
 
         margin-right: 16px;
-        transition: 0.2s;
+
         &:active{
             transform: scale(0.9);
+            transition: 0.2s;
+        }
+
+        &:hover{
+            box-shadow: 0 0 5px 1px grey;
+            border-radius: 50%;
         }
     }
 
@@ -134,9 +140,15 @@
         background:  url(../../img/png/Rightbutton.png) left center;
         width: 40px;
         height: 40px;
-        transition: 0.2s;
+
         &:active{
             transform: scale(0.9);
+            transition: 0.2s;
+        }
+
+        &:hover{
+            box-shadow: 0 0 5px 1px grey;
+            border-radius: 50%;
         }
     }
 

@@ -14,8 +14,6 @@
         position: relative;
     }
 
-   
-
     .burger{
         display: flex;
         width: 80px;
@@ -121,7 +119,6 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-
     }
 
     &__list {
@@ -266,6 +263,10 @@
         color: #FFFFFF;
 
         margin:0 32px 14px 0;
+
+        &:hover{
+            color:#D9C287;
+        }
     }
 
     &__icons {
@@ -298,6 +299,10 @@
         color: #FFFFFF;
 
         margin-bottom: 16px;
+
+        &:hover{
+            color:#D9C287;
+        }
     }
 
     &__email-link{
@@ -313,6 +318,10 @@
         opacity: 0.64;
 
         margin-bottom: 38px;
+
+        &:hover{
+            color:#D9C287;
+        }
     }
 
     &__top {
@@ -338,7 +347,9 @@
         width: 80px;
         height: 80px;
         padding: 0 25px;
-
+        &:hover{
+            color:#D9C287;
+        }
     }
 
     &__burger-exit {

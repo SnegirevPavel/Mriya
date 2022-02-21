@@ -102,6 +102,12 @@
             margin-right: 0;
             margin-bottom: 32px;
         }
+
+        transition: 0.1s;
+        &:hover{
+            box-shadow: 1px 1px 10px 4px grey;
+            border-radius:10% ;
+        }
     }
 
     &__img{
@@ -159,6 +165,12 @@
             width: 100%;
             height: auto;
             margin-bottom: 32px;
+        }
+
+        transition: 0.1s;
+        &:hover{
+            box-shadow: 1px 1px 10px 4px grey;
+            border-radius:10% ;
         }
     }
 

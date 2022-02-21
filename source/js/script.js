@@ -5,7 +5,7 @@ function openCity(evt, cityName) {           //Меню - вертикальны
 	// Получаю все элементы с классом tabcontent и скрываю их
 	tabcontent = document.getElementsByClassName("tabcontent");
 	for (i = 0; i < tabcontent.length; i++) {
-	  tabcontent[i].style.display = "none";
+	  tabcontent[i].style.display = "none";    //length - это число, индекс которого всегда является на 1 больше индекса самого последнего индекса в массиве
 	}
   
 	// Получаю все элементы с классом  tablinks и снимаю класс active
@@ -18,7 +18,6 @@ function openCity(evt, cityName) {           //Меню - вертикальны
 	document.getElementById(cityName).style.display = "block";
 	evt.currentTarget.className += " active";
 }
-
 
 
 // Slider================
@@ -113,15 +112,7 @@ document.querySelector('.mobile__burger-exit').addEventListener('click', () => {
     document.querySelector('.mobile__list-wrap').classList.toggle('show');
 });
 
-
 // =======================
-
-let burger = document.querySelector('.burger');
-console.log(burger);
-burger.onclick = function(){     
-    this.classList.toggle('buttonRight')  ;
-        
-}
 
 let item = document.querySelectorAll(".mobile__item");          //Функция добавляет класс с фоном для вкладки
 for (let i = 0; i < item.length; i++) {
@@ -131,10 +122,7 @@ for (let i = 0; i < item.length; i++) {
 }
 
 
-
-
 //Вкладки в меню бургер
-
 $(document).ready(function(){
     $('.mobile__item').click(function(event){
         $(this).toggleClass('run').next().slideToggle(300);

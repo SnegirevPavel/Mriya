@@ -131,6 +131,12 @@
             width: 154px;
             margin-right: 16px;
         }
+
+        transition: 0.2s;
+        &:hover{
+            box-shadow: 0px 0px 2px 1px grey;
+            transform: scale(1.01);
+        }
     }
 
     &__btn-light {
@@ -148,6 +154,16 @@
         border: 1px solid #D9C287;
         @media (max-width: 575px){
             width: 154px;
+        }
+
+        transition: 0.2s;
+
+        &:hover{
+            box-shadow: 0px 0px 2px 1px grey;
+            transform: scale(1.01);
+            color: white;
+            background-color:#BCA56A ;
+            border-color: #BCA56A;
         }
     }
 

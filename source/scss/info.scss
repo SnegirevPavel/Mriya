@@ -76,5 +76,15 @@
         width: 200px;
         height: 64px;
         border: 1px solid #D9C287;
+
+        transition: 0.1s;
+
+        &:hover{
+            box-shadow: 0px 0px 2px 1px grey;
+            transform: scale(1.01);
+            color: white;
+            background-color:#BCA56A ;
+            border-color: #BCA56A;
+        }
     }
 }

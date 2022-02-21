@@ -125,6 +125,9 @@
         white-space: nowrap;
 
         padding-right: 10px;
+        &:hover{
+            color:#3D3C3C;
+        }
 
         @media (max-width: 991px){
             margin: 0;
@@ -133,6 +136,9 @@
 
     &__lang-btn--active{  //темная(нажатая) кнопка языка
         color: #3D3C3C;
+        &:hover{
+            color:rgba(0, 0, 0, 0.24);
+        }
     }
 
     &__tel {
